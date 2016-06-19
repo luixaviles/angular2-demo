@@ -1,4 +1,4 @@
-Angular 2 And The Future of Web Applications
+Angular 2 Demo
 ===========================================================
 
 Slides: [https://luixaviles.github.io/angular2-demo/](https://luixaviles.github.io/angular2-demo/)
@@ -14,42 +14,19 @@ After that, use `Git bash` to run all commands if you are on Windows platform.
 
 ## Install dependencies
 
-Install `Grunt`:
-```
-npm install -g grunt-cli
-```
-
-Install `bower`:
-```
-npm install -g bower
-```
-
 Install `angular-cli`:
+
 ```
 npm install -g angular-cli
 ```
 
 For more details about `angualr-cli`, please refer to: [https://github.com/angular/angular-cli](https://github.com/angular/angular-cli#installation)
 
-## Run the slides
-
-To run the slides locally, just install dependencies and run the preview server:
-
-```bash
-$ cd slides/
-$ npm install && bower install
-$ grunt server
-```
-
-Your default browser should be open with [http://localhost:8000/](http://localhost:8000)
-
-
 ## Run the project
 
 To run the demo project locally, just install dependencies and run the application in development mode:
 
 ```bash
-$ cd project/
 $ npm install
 $ ng serve
 ```
