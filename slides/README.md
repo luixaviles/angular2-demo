@@ -1,4 +1,4 @@
-# Angular 2 tech talk + Demo
+# Angular 2 And The Future of Web Applications
 ## June 2016
 
 ### To install & view presentation locally
