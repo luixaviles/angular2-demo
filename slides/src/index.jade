@@ -1,0 +1,202 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        title Angular 2 and the Future of Web Applications
+
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,600', rel='stylesheet', type='text/css')
+
+        // build:css styles/styles.css
+        link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-twilight.css')
+        link(rel='stylesheet', type='text/css', href='styles/main.css')
+        // endbuild
+
+    body
+
+        article
+
+            section
+                h1 Angular 2
+                h3 And the future of Web Applications
+                p
+                a(href='https://twitter.com/luixaviles') Luis Aviles
+                br
+                small June 2016
+
+            section.light(data-bespoke-state='green')
+                h2 About Me
+
+            section
+                h2.bullet About Me
+                ul
+                    li Full Stack Developer
+                    li Software Engineer
+
+            section
+                h2.bullet Technologies
+                ul
+                    li Java
+                    li JavaScript
+                    li Python
+
+            section
+                h2.bullet JavaScript
+                ul
+                    li NodeJS
+                    li AngularJS
+
+            section.gif.gif--fight
+              h2.bullet AngularJS 1
+              h2.bullet vs
+              h2.bullet Angular 2
+
+
+            section
+                h2.bullet Why AngularJS?
+                ul
+                    li MVC done right
+                    li Two way data binding
+                    li Directives
+                    li Form validation
+                    li Animation
+                    li Testing
+            
+            section.light(data-bespoke-state='green')
+                h2 Angular 2 Features
+                          
+            section
+                h2.bullet Develop Across All Platforms
+                ul
+                    li Progressive Web Apps
+                    li Desktop-installed apps
+
+            section
+                h2.bullet Develop Across All Platforms
+                ul
+                    li Native mobile apps
+                    li 
+                      img.screenshot(src='images/mobile-native.png')
+                    
+            section
+                h2.bullet Speed & Performance
+                ul
+                    li Highly optimized code generation
+                    li Serve view on different servers
+                    li Code Splitting with Component Router
+ 
+            section
+                h2.bullet Productivity
+                ul
+                    li IDEs: Intelligent code completion and more  
+                    li Angular CLI
+     
+            section
+                h2.bullet Productivity
+                ul
+                  li Before Angular CLI
+                  li
+                    pre.language-bash
+                      code.
+                        Create a project directory
+                        Write a tsconfig.json file
+                        Write a typings.json file
+                        Write a package.json file
+                        Install packages
+                      
+            section
+              h2.bullet Productivity
+              ul
+                li Before Angular CLI
+                li
+                  pre.language-bash
+                    code.
+                      Create folder structure
+                      Write app.component.ts
+                      Write main.ts
+                      Write index.html
+                      Write style.css
+                      npm start
+                      
+            section
+              h2.bullet Productivity
+              ul
+                li With Angular CLI
+                li
+                  pre.language-bash
+                    code.
+                      ng new AwesomeApp
+                      cd AwesomeApp
+                      ng serve
+                    
+            section
+                h2.bullet Full Development Story
+                img.screenshot(src='images/workflow-automation-angular-cli.png')
+
+            section.gif.gif--future
+              h2.bullet Angular CLI
+              h2.bullet is
+              h2.bullet the future
+
+            section
+                h2.bullet Community
+                img.screenshot(src='images/community.png')
+
+            section.light(data-bespoke-state='green')
+              h2 Why Angular 2?
+              
+            section
+              h2.bullet Component-Based
+              ul
+                li Web Components: web standard
+                li No Controllers
+                li $scope are no longer used
+
+            section
+              h2.bullet TypeScript
+              ul
+                li Developed by Microsoft
+                li Default language for Angular 2
+                li Object Oriented Programming
+                li Program code is compiled to JavaScript
+
+            section.gif.gif--bubbles
+              h2.bullet This Is Amazing!
+  
+            section
+              h2.bullet Small is Beautiful
+              img.screenshot(src='images/small-beautiful.png')
+                    
+            section.light(data-bespoke-state='green')
+              h1 Demo
+            
+            section.light(data-bespoke-state='green')
+              h1 Questions?
+              
+            section.gif.gif--angular-is-awesome
+                h1.bullet Angular 2
+                h1.bullet is awesome
+                h2.bullet :-)
+
+            section
+                h1.bullet Thank You!
+                img.avatar(src='images/twitter.png')
+                p
+                    a(href='https://twitter.com/luixaviles') @luixaviles
+                p
+                img.avatar(src='images/github.png')
+                p
+                    a(href='https://github.com/luixaviles') @luixaviles
+
+        // build:js scripts/scripts.js
+        script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+        script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+        script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+        script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+        script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
+        script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+        script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+        script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+        script(src='bower_components/prism/prism.js')
+        script(src='scripts/main.js')
+        // endbuild
