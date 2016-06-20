@@ -16,7 +16,10 @@ The features of this project includes:
 * Events triggering after click on a button. `(click)`
 
 The app uses [Random user Generator](https://randomuser.me) to show initial data.
-This demo was developed for `Google I/O Extended` event in Cochabamba, Bolivia.
+This demo was presented in `Google I/O Extended` event in Cochabamba, Bolivia.
+
+## Screenshots
+![](/screenshots/main-page.jpg?raw=true)
 
 ## Prerequisites
 
