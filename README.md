@@ -3,6 +3,21 @@ Angular 2 Demo
 
 Slides: [https://luixaviles.github.io/angular2-demo/](https://luixaviles.github.io/angular2-demo/)
 
+## Description
+
+This demo is based on [puppy-love](https://github.com/kara/puppy-love) project.
+The features of this project includes:
+
+* A Service definition, so that HTTP calls can be performed to display initial data.
+* A custom model definition, to allow map used data.
+* Dependency Injection.
+* Two way data binding(Using `[(ngModel)]`).
+* Use of `*ngIf` and `*ngFor` into provided form.
+* Events triggering after click on a button. `(click)`
+
+The app uses [Random user Generator](https://randomuser.me) to show initial data.
+This demo was developed for `Google I/O Extended` event in Cochabamba, Bolivia.
+
 ## Prerequisites
 
 First, ensure you have the following installed:
