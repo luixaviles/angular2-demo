@@ -9,7 +9,8 @@ import {MdCheckbox} from '@angular2-material/checkbox';
 import {MdRadioButton, MdRadioGroup, MdRadioDispatcher} from '@angular2-material/radio';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
-import {AssistantService, Assistants, Assistant, Name, Location, ProfilePicture} from './assistant.service'
+import {AssistantService} from './shared/services/assistant/assistant.service'
+import {Assistant, Name, Location, ProfilePicture} from './shared/model/assistants.model'
 
 @Component({
   moduleId: module.id,
