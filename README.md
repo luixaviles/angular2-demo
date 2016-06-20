@@ -19,7 +19,7 @@ The app uses [Random user Generator](https://randomuser.me) to show initial data
 This demo was presented in `Google I/O Extended` event in Cochabamba, Bolivia.
 
 ## Screenshots
-![](/screenshots/main-page.jpg?raw=true)
+![](/screenshots/main-page.png?raw=true)
 
 ## Prerequisites
 
