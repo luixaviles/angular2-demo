@@ -20,6 +20,8 @@ This demo was presented in `Google I/O Extended` event in Cochabamba, Bolivia.
 
 ## Screenshots
 ![](/screenshots/main-page.png?raw=true)
+![](/screenshots/registration-form.png?raw=true)
+![](/screenshots/new-input.png?raw=true)
 
 ## Prerequisites
 
