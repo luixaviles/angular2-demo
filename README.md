@@ -1,4 +1,4 @@
-Angular 2 Demo
+A Fully Functional Angular 2 Demo Application
 ===========================================================
 
 Slides: [https://luixaviles.github.io/angular2-demo/](https://luixaviles.github.io/angular2-demo/)
@@ -14,6 +14,7 @@ The features of this project includes:
 * Two way data binding(Using `[(ngModel)]`).
 * Use of `*ngIf` and `*ngFor` into provided form.
 * Events triggering after click on a button. `(click)`
+* Use of Material Design components for Angular 2
 
 The app uses [Random user Generator](https://randomuser.me) to show initial data.
 This demo was presented in `Google I/O Extended` event in Cochabamba, Bolivia.
