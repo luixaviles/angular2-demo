@@ -1,17 +1,12 @@
-import {
-  beforeEachProviders,
-  it,
-  describe,
-  expect,
-  inject
-} from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+
 import { AssistantService } from './assistant.service';
 
-describe('Assistant Service', () => {
-  beforeEachProviders(() => [AssistantService]);
+describe('AssistantService', () => {
+  beforeEach(() => TestBed.configureTestingModule({}));
 
-  it('should ...',
-      inject([AssistantService], (service: AssistantService) => {
+  it('should be created', () => {
+    const service: AssistantService = TestBed.get(AssistantService);
     expect(service).toBeTruthy();
-  }));
+  });
 });

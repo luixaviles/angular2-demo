@@ -1,0 +1,73 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item *ngFor="let view of views"> 
+        <mat-icon mat-list-icon>{{view.icon}}</mat-icon>
+        <span mat-line>{{view.name}}</span>
+        <span mat-line class="secondary">{{view.description}}</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.open()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    Google I/O Extended Cochabamba
+    <button mat-fab (click)="formShowing=!formShowing">
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="form" *ngIf="formShowing">
+    <mat-card>
+      <mat-card-title>Registration Form</mat-card-title>
+      <mat-card-content>
+        <form>
+          <mat-form-field>
+            <input matInput placeholder="Name" [(ngModel)]="model.name.first" name="Name">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="City" [(ngModel)]="model.location.city" name="City">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Description" [(ngModel)]="model.description" name="Description">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Profile Picture URL" [(ngModel)]="model.picture.large" name="ProfilePicture">
+          </mat-form-field>
+          <mat-radio-group [(ngModel)]="model.gender" name="gender">
+            <mat-radio-button value="male" name="male">Male</mat-radio-button>
+            <mat-radio-button value="female" name="female">Female</mat-radio-button>
+          </mat-radio-group>
+          <div>
+            <mat-checkbox indeterminate="true" name="Angular2">Angular 2</mat-checkbox>
+            <mat-checkbox indeterminate="true" name="Firebase">Firebase</mat-checkbox>
+            <mat-checkbox indeterminate="true" name="VR">VR</mat-checkbox>
+            <mat-checkbox indeterminate="true" name="Android">Android</mat-checkbox>
+          </div>
+        </form>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button color="accent" (click)="add()">ADD</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div class="card-container">
+    <mat-card *ngFor="let assistant of assistants">
+      <mat-card-title-group>
+        <img *ngIf="assistant.picture.large" mat-card-sm-image src="{{assistant.picture.large}}">
+        <img *ngIf="!assistant.picture.large" mat-card-sm-image src="assets/angular.png">
+        <mat-card-title>{{assistant.name.first}} {{assistant.name.last}}</mat-card-title>
+        <mat-card-subtitle>{{assistant.location.city}}</mat-card-subtitle>
+        <mat-card-subtitle *ngIf="assistant.description">
+          {{assistant.description}}
+        </mat-card-subtitle>
+        <mat-card-subtitle *ngIf="!assistant.description">
+          Lorem ipsum dolor sit amet
+        </mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card>
+  </div>
+
+</mat-sidenav-container>

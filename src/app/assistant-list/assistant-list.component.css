@@ -1,0 +1,42 @@
+.secondary {
+    color: rgba(0,0,0,0.54);
+}
+  
+[mat-fab] {
+    position: absolute;
+    right: 3%;
+    top: 34px;
+    z-index: 1;
+}
+
+mat-sidenav-layout {
+    background: rgba(0,0,0,0.03);
+}
+  
+mat-form-field {
+    margin: 8px 0;
+    width: 100%;
+}
+
+mat-radio-button, mat-checkbox {
+    margin: 16px 8px;
+}
+
+.form {
+    display: flex;
+}
+
+.form mat-card {
+    flex-grow: 1;
+}
+
+mat-card {
+    width: 400px;
+    box-sizing: border-box;
+    margin: 16px;
+}
+  
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+}

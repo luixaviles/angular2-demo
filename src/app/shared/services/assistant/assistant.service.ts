@@ -1,37 +1,23 @@
-import {Injectable} from '@angular/core';
-import {Http, Response, URLSearchParams} from '@angular/http';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Assistants } from '../../model/assistants.model';
 
-import {Observable} from 'rxjs/Observable'
-import {Assistants} from '../../model/assistants.model'
-
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class AssistantService {
 
-  constructor(private http:Http) {
+  constructor(private http: HttpClient) {
   }
 
-  private USER_URL = 'http://api.randomuser.me';
+  private USER_URL = 'https://randomuser.me/api/';
 
-  getAssistants(number:string):Observable<Assistants> {
-    let params:URLSearchParams = new URLSearchParams();
-    params.set('results', number);
+  getAssistants(number: string): Observable<Assistants> {
+    const params = { results: number };
 
-    return this.http.get(this.USER_URL, {
-      search: params
-    })
-      .map(this.extractData)
-      .catch(this.handleError);
-  }
-
-  private extractData(res:Response) {
-    let body = res.json();
-    return body || {};
-  }
-
-  private handleError(error:any) {
-    let errMsg = (error.message) ? error.message :
-      error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-    console.error(errMsg);
-    return Observable.throw(errMsg);
+    return this.http.get<Assistants>(this.USER_URL, {
+      params: params
+    });
   }
 }
