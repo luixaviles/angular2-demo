@@ -1,12 +1,13 @@
-import {bootstrap} from '@angular/platform-browser-dynamic';
-import {enableProdMode} from '@angular/core';
-import {HTTP_PROVIDERS} from '@angular/http';
-import {AssistantListAppComponent, environment} from './app/';
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import {AssistantService} from './app/shared/services/assistant/assistant.service'
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(AssistantListAppComponent, [HTTP_PROVIDERS, AssistantService]);
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
